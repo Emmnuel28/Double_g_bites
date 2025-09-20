@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff9b3d">
+  <meta name="description" content="Double G Bites offers authentic Nigerian chin chin snacks made with premium ingredients. Order our delicious chin chin via WhatsApp only.">
+  <meta name="keywords" content="chin chin, Nigerian snacks, Double G Bites, authentic snacks, crunchy snacks, sweet treats, order chin chin">
+  <meta name="author" content="Double G Bites">
+  <meta property="og:title" content="Double G Bites | Crunchy Chin Chin">
+  <meta property="og:description" content="Delicious homemade Chin Chin made with grace and love. Order via WhatsApp only.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://doubleGbites.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Double G Bites | Crunchy Chin Chin">
+  <meta name="twitter:description" content="Delicious homemade Chin Chin made with grace and love. Order via WhatsApp only.">
+  <link rel="canonical" href="https://doubleGbites.com">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- Favicon for all devices -->
+<link rel="apple-touch-icon" sizes="57x57" href="image/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="image/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="image/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="image/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="image/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="image/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="image/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="image/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="image/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="image/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="image/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+<link rel="manifest" href="image/manifest.json">
+  
+<!-- Preload critical resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- No-JS fallbacks -->
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
+  
+  <!-- Critical CSS for above-the-fold content -->
+  <style>
+    /* CSS Variables - Matching the reference */
+    :root {
+      --primary: #ff9b3d;
+      --secondary: #4ecdc4;
+      --accent: #ffd166;
+      --text: #2d3436;
+      --light: #f8f9fa;
+      --dark: #1a1a2e;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --whatsapp: #25D366;
+      --nav-gradient: linear-gradient(90deg, #f8f9fa, #ffd166, #4ecdc4);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    /* Modern Header - Matching the reference */
+    header {
+      background-color: var(--primary);
+      padding: 1rem 0;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: var(--transition);
+    }
+    
+    header.scrolled {
+      padding: 0.5rem 0;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    
+    .logo-img {
+      height: clamp(3rem, 6vw, 4rem);
+      width: auto;
+      min-height: 48px;
+    }
+    
+    /* Modern Navigation - Matching the reference */
+    nav {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: clamp(1rem, 1.5vw, 1.1rem);
+      position: relative;
+      transition: var(--transition);
+      padding: 0.5rem 0;
+    }
+    
+    .nav-links a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: var(--nav-gradient);
+      background-size: 200% 100%;
+      transition: var(--transition);
+    }
+    
+    .nav-links a:hover {
+      color: white;
+    }
+    
+    .nav-links a.active {
+      color: white;
+      font-weight: 700;
+      background: var(--nav-gradient);
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    
+    .nav-links a:hover:after,
+    .nav-links a.active:after {
+      width: 100%;
+      background-position: right center;
+    }
+    
+    /* Mobile menu button */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
+      transition: var(--transition);
+      z-index: 1001;
+    }
+    
+    .menu-toggle:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    /* Page Title Indicator */
+    .page-title-indicator {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem 0;
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+    
+    /* Page Section */
+    .page {
+      display: none;
+      padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 2rem);
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeIn 0.6s ease;
+      margin-top: 40px;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .page.active {
+      display: block;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: clamp(2rem, 5vw, 3rem);
+    }
+    
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      color: var(--dark);
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .section-header h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      border-radius: 2px;
+    }
+    
+    .section-header p {
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      color: #666;
+      max-width: 700px;
+      margin: 1.5rem auto 0;
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, rgba(255, 155, 61, 0.3), rgba(78, 205, 196, 0.3)), url('hero section image/hero\ bannar\ section.gif');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 77vh;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 0 1.2rem;
+      margin-top: 65px;
+    }
+    
+    @media (max-width: 768px) {
+      .hero {
+        margin-top: 60px;
+        background-attachment: scroll;
+        height: 70vh;
+        min-height: 450px;
+      }
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 70% 30%, rgba(255, 209, 102, 0.2) 0%, transparent 70%);
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      text-align: center;
+    }
+    
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 5vw, 3.5rem);
+      margin-bottom: clamp(1rem, 2vw, 1.5rem);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+    
+    .hero p {
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+      margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 300;
+      opacity: 0.95;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background-color: white;
+      color: var(--primary);
+      padding: clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 3vw, 2.5rem);
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      transition: left 0.7s;
+    }
+    
+    .cta-button:hover::before {
+      left: 100%;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Bouncing animation for order button */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-15px);
+      }
+      60% {
+        transform: translateY(-7px);
+      }
+    }
+    
+    .bouncing {
+      animation: bounce 2s infinite;
+    }
+    
+    .bouncing:hover {
+      animation-play-state: paused;
+    }
+    
+    /* What is Chin Chin Section */
+    .what-is-chin-chin {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: clamp(2rem, 4vw, 3rem);
+      margin-bottom: clamp(3rem, 5vw, 4rem);
+    }
+    
+    .chin-chin-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .chin-chin-text {
+      text-align: center;
+    }
+    
+    .chin-chin-text h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      color: var(--dark);
+      margin-bottom: 1rem;
+    }
+    
+    .chin-chin-text p {
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      color: #666;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    
+    .chin-chin-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+      gap: clamp(1.5rem, 3vw, 2rem);
+      margin-top: 1.5rem;
+    }
+    
+    .chin-chin-feature {
+      text-align: center;
+      padding: 1rem;
+    }
+    
+    .chin-chin-feature i {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+    }
+    
+    .chin-chin-feature h4 {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--dark);
+      margin-bottom: 0.5rem;
+    }
+    
+    .chin-chin-feature p {
+      font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+      color: #666;
+    }
+    
+    /* Modern Cards */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+      gap: clamp(1.5rem, 3vw, 2rem);
+      margin-top: clamp(2rem, 4vw, 3rem);
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: clamp(1.5rem, 3vw, 2rem);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+    
+    .card-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .card-icon i {
+      font-size: 1.8rem;
+      color: white;
+    }
+    
+    .card h3 {
+      font-size: clamp(1.1rem, 3vw, 1.4rem);
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .card p {
+      color: #666;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+    
+    .card-btn {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+      transition: var(--transition);
+      align-self: flex-start;
+    }
+    
+    .card-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255, 155, 61, 0.3);
+    }
+    
+    /* Image Slider Styles */
+    .slider-section {
+      padding: clamp(2rem, 5vw, 4rem) 0;
+      background-color: white;
+    }
+    
+    .slider-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 clamp(1rem, 4vw, 2rem);
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      height: clamp(250px, 40vw, 500px);
+    }
+    
+    .slider {
+      display: flex;
+      height: 100%;
+      position: relative;
+    }
+    
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: clamp(1.5rem, 4vw, 3rem);
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 3s ease-in-out;
+    }
+    
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+    
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, transparent 100%);
+    }
+    
+    .slide-content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+    }
+    
+    .slide h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.2rem, 3vw, 2.5rem);
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    
+    .slide p {
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      opacity: 0.9;
+    }
+    
+    .slider-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+      z-index: 10;
+    }
+    
+    .slider-btn {
+      background: rgba(255, 255, 255, 0.9);
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .slider-btn:hover {
+      background: white;
+      transform: scale(1.1);
+    }
+    
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 1.5rem;
+    }
+    
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #ddd;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    
+    .dot.active {
+      background: var(--primary);
+      transform: scale(1.2);
+    }
+    
+    /* Floating Order Button */
+    .floating-order-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 998;
+    }
+    
+    .floating-order-btn a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--whatsapp);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+      transition: all 0.3s ease;
+    }
+    
+    .floating-order-btn a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+    }
+    
+    @media (max-width: 768px) {
+      .floating-order-btn {
+        bottom: 15px;
+        right: 15px;
+      }
+      
+      .floating-order-btn a {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+      }
+    }
+    
+    /* Mobile Menu Animation - Matching the reference */
+    .mobile-menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .mobile-menu-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 300px;
+      height: 100%;
+      background: white;
+      z-index: 1000;
+      padding: 2rem;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+      transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      overflow-y: auto;
+    }
+    
+    .mobile-menu.active {
+      right: 0;
+    }
+    
+    .mobile-menu-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      margin-bottom: 2rem;
+      background-color: var(--primary);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .mobile-menu-banner .mobile-menu-logo {
+      padding-left: 1rem;
+    }
+    
+    .mobile-menu-banner .mobile-close-btn {
+      padding-right: 1rem;
+      color: white;
+    }
+    
+    .mobile-menu-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .mobile-menu-logo i {
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+    
+    .mobile-menu-logo h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--dark);
+    }
+    
+    .mobile-close-btn {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--text);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    
+    .mobile-close-btn:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .mobile-nav-links {
+      list-style: none;
+    }
+    
+    .mobile-nav-links li {
+      margin-bottom: 1.5rem;
+    }
+    
+    .mobile-nav-links a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      display: block;
+      padding: 0.5rem 0;
+      position: relative;
+      transition: var(--transition);
+    }
+    
+    .mobile-nav-links a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--primary);
+      transition: var(--transition);
+    }
+    
+    .mobile-nav-links a:hover,
+    .mobile-nav-links a.active {
+      color: var(--primary);
+    }
+    
+    .mobile-nav-links a:hover:after,
+    .mobile-nav-links a.active:after {
+      width: 30px;
+    }
+    
+    /* Modern Footer - Matching the reference */
+    footer {
+      background-color: var(--dark);
+      color: white;
+      padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 2rem);
+      margin-top: 5rem;
+    }
+    
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: clamp(2rem, 4vw, 3rem);
+    }
+    
+    .footer-col {
+      margin-bottom: 1.5rem;
+    }
+    
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .footer-logo img {
+      height: clamp(5rem, 10vw, 6rem);
+      width: auto;
+      object-fit: contain;
+    }
+    
+    .footer-col h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: var(--primary);
+    }
+    
+    .footer-links {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 0.8rem;
+    }
+    
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+      transition: var(--transition);
+      display: inline-block;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+    
+    .footer-links a:hover {
+      color: var(--primary);
+      transform: translateX(5px);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: white;
+      font-size: 1.1rem;
+      transition: var(--transition);
+    }
+    
+    .social-links a:hover {
+      background: var(--primary);
+      transform: translateY(-5px);
+    }
+    
+    .copyright {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: #aaa;
+      font-size: clamp(0.8rem, 2vw, 0.9rem);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .nav-links {
+        gap: 1.5rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+      
+      .page-title-indicator {
+        font-size: 1rem;
+        padding: 0.8rem 0;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+      
+      .cta-button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+      }
+      
+      .section-header h2 {
+        font-size: 1.5rem;
+      }
+      
+      .slider-container {
+        height: 250px;
+      }
+      
+      .slide h3 {
+        font-size: 1.3rem;
+      }
+      
+      .slide p {
+        font-size: 0.9rem;
+      }
+      
+      .slider-btn {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .mobile-menu {
+        width: 100%;
+        right: -100%;
+      }
+    }
+  </style>
+  
+  <!-- Load non-critical CSS asynchronously -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+</head>
+<body>
+  <header id="mainHeader">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="emblem/Double G bites logo shadow.png" alt="Double G Bites Logo" class="logo-img" loading="lazy">
+      </a>
+      
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Page Title Indicator -->
+  <div class="page-title-indicator" id="pageTitleIndicator">Home</div>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-banner">
+      <div class="mobile-menu-logo">
+        <a href="index.html" class="logo">
+          <img src="emblem/Double G bites logo shadow.png" alt="Double G Bites Logo" class="logo-img" loading="lazy">
+        </a>
+      </div>
+      <button class="mobile-close-btn" id="mobileCloseBtn">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="testimonials.html" class="mobile-nav-link">Testimonials</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </div>
+  
+  <!-- Floating Order Button -->
+  <div class="floating-order-btn" id="floatingOrderBtn">
+    <a href="https://wa.me/2349036516185?text=I%20would%20like%20to%20place%20an%20order" target="_blank" class="bouncing">
+      <i class="fab fa-whatsapp"></i> Order Now
+    </a>
+  </div>
+  
+  <!-- Hero Section - 80vh Height -->
+  <div class="hero">
+    <div class="hero-content">
+      <h2>Crunchy. Sweet. Unforgettable.</h2> 
+      <br />
+      <br />
+      <br />
+      <p>Delicious homemade Chin Chin made with grace and love. Authentic Nigerian snacks crafted with premium ingredients.</p>
+      <a href="products.html" class="cta-button" id="exploreBtn">Explore Our Chin Chin</a>
+    </div>
+  </div>
+  
+  <!-- Home Page Content -->
+  <div id="home-page" class="page active">
+    <!-- What is Chin Chin Section -->
+    <div class="what-is-chin-chin">
+      <div class="section-header">
+        <h2>What is Chin Chin?</h2>
+        <p>Discover this delicious West African snack</p>
+      </div>
+      
+      <div class="chin-chin-content">
+        <div class="chin-chin-text">
+          <h3>A Taste of West Africa</h3>
+          <p>Chin chin is a popular West African fried pastry snack similar to doughnuts or small biscuits. This crunchy, sweet delicacy is made from flour, sugar, butter, and sometimes milk or eggs.</p>
+          <p>At Double G Bites, we prepare our chin chin using traditional Nigerian recipes passed down through generations. Each batch is handcrafted with love and the finest ingredients to ensure an authentic taste that brings back memories of home.</p>
+        </div>
+        
+        <div class="chin-chin-features">
+          <div class="chin-chin-feature">
+            <i class="fas fa-cookie-bite"></i>
+            <h4>Crunchy Texture</h4>
+            <p>Perfectly fried to achieve that satisfying crunch in every bite</p>
+          </div>
+          <div class="chin-chin-feature">
+            <i class="fas fa-heart"></i>
+            <h4>Sweet Flavor</h4>
+            <p>Balanced sweetness that melts in your mouth</p>
+          </div>
+          <div class="chin-chin-feature">
+            <i class="fas fa-history"></i>
+            <h4>Traditional Recipe</h4>
+            <p>Made using authentic Nigerian methods passed down for generations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Gallery Section -->
+    <div class="slider-section">
+      <div class="section-header">
+        <h2>Gallery</h2>
+        <p>Discover our range of delicious chin chin varieties</p>
+      </div>
+      
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide active" style="background-image: url('site_gallery/gallery\ 5.jpeg');">
+            <div class="slide-content">
+              <h3>Double G Bites</h3>
+              <p>Welcome to absolute irresistible Crunchiness </p>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('site_gallery/gallery\ 6.jpeg');">
+            <div class="slide-content">
+              <h3>Golden Crunch Perfection</h3>
+              <p>Our classic chin chin - crispy, sweet, and absolutely irresistible</p>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('site_gallery/gallery\ 3.jpeg');">
+            <div class="slide-content">
+              <h3>Spicy Delight</h3>
+              <p>For those who love a kick! Our spicy chin chin with African spices</p>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('site_gallery/gallery\ 4.jpeg');">
+            <div class="slide-content">
+              <h3>Handcrafted with Love</h3>
+              <p>Every batch is made using traditional methods and premium ingredients</p>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('site_gallery/gallery\ 5.jpeg');">
+            <div class="slide-content">
+              <h3>Beautiful Gift Packs</h3>
+              <p>Perfect for special occasions, birthdays, and corporate gifts</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="slider-dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    
+    <div class="section-header">
+      <h2>Why Choose Double G Bites?</h2>
+      <p>We take pride in delivering authentic Nigerian chin chin with exceptional quality and taste</p>
+    </div>
+    
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <h3>Premium Ingredients</h3>
+        <p>Made with only the finest, all-natural ingredients for authentic flavor</p>
+        <a href="about.html" class="card-btn">Learn More</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3>Handcrafted with Love</h3>
+        <p>Each batch is carefully made using traditional methods and recipes</p>
+        <a href="about.html" class="card-btn">Our Process</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <h3>Quality Guaranteed</h3>
+        <p>Consistently delicious chin chin that keeps customers coming back</p>
+        <a href="about.html" class="card-btn">Our Promise</a>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">
+          <img src="emblem/DoubleG_bites footer logo.png" alt="Double G Bites Logo" loading="lazy">
+        </a>
+        <p>Authentic Nigerian chin chin made with traditional recipes and premium ingredients.</p>
+        <div class="social-links">
+         <a href="https://www.facebook.com/share/14KB1D6fhSs/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/doubleg_bites?igsh=YW4ybW9oa2x4dDN5" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/2349036516185" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Our Products</h4>
+        <ul class="footer-links">
+          <li><a href="products.html#classic">Classic Chin Chin</a></li>
+          <li><a href="products.html#spicy">Spicy Chin Chin</a></li>
+          <li><a href="products.html#gift">Gift Packs</a></li>
+          <li><a href="contact.html">Bulk Orders</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul class="footer-links">
+          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2349036516185" target="_blank">+234 903 651 6185</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:doublegbites@gmail.com">doublegbites@gmail.com</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Double G Bites. Grace in every bite.</p>
+    </div>
+  </footer>
+  
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+    
+    function openMobileMenu() {
+      mobileMenu.classList.add('active');
+      mobileMenuOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('active');
+      mobileMenuOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    
+    menuToggle.addEventListener('click', openMobileMenu);
+    mobileCloseBtn.addEventListener('click', closeMobileMenu);
+    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+    
+    // Header scroll effect
+    const header = document.getElementById('mainHeader');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Image Slider Functionality - Fade In/Out Animation
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    let currentSlide = 0;
+    const slideCount = slides.length;
+    
+    // Show slide function
+    function showSlide(index) {
+      // Hide all slides
+      slides.forEach(slide => {
+        slide.classList.remove('active');
+      });
+      
+      // Show current slide
+      slides[index].classList.add('active');
+      
+      // Update dots
+      dots.forEach(dot => {
+        dot.classList.remove('active');
+      });
+      dots[index].classList.add('active');
+      
+      currentSlide = index;
+    }
+    
+    // Next slide
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slideCount;
+      showSlide(currentSlide);
+    }
+    
+    // Previous slide
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+      showSlide(currentSlide);
+    }
+    
+    // Auto slide
+    let slideInterval = setInterval(nextSlide, 5000);
+    
+    // Pause auto slide when hovering
+    const sliderContainer = document.querySelector('.slider-container');
+    sliderContainer.addEventListener('mouseenter', () => {
+      clearInterval(slideInterval);
+    });
+    
+    // Resume auto slide when not hovering
+    sliderContainer.addEventListener('mouseleave', () => {
+      slideInterval = setInterval(nextSlide, 5000);
+    });
+    
+    // Button events
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+    
+    // Dot events
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        showSlide(index);
+      });
+    });
+    
+    // Touch events for mobile slider
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    sliderContainer.addEventListener('touchstart', e => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    sliderContainer.addEventListener('touchend', e => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+    
+    function handleSwipe() {
+      if (touchEndX < touchStartX - 50) nextSlide();
+      if (touchEndX > touchStartX + 50) prevSlide();
+    }
+    
+    // Initialize the slider
+    showSlide(0);
+    
+    // Optimize loading performance
+    document.addEventListener('DOMContentLoaded', function() {
+      // Lazy load images
+      const images = document.querySelectorAll('img');
+      images.forEach(img => {
+        img.loading = 'lazy';
+      });
+    });
+  </script>
+</body>
+</html>
